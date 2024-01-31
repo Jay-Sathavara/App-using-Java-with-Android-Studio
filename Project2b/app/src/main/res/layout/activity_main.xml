@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kedaar_nath"
+    android:scaleType="fitXY" >
+
+    <TextView
+        android:id="@+id/textInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="\n\nClick any botton \n\n"
+        android:textColor="@color/textInfo_color"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/incrementButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textInfo"
+        android:text=" +1 Year " />
+
+    <Button
+        android:id="@+id/decrementButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/incrementButton"
+        android:layout_marginTop="24dp"
+        android:text=" -1 Year " />
+
+    <TextView
+        android:id="@+id/countTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/decrementButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Your Year = 0"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</RelativeLayout>
