@@ -9,7 +9,6 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button incrementButton, decrementButton;
     private TextView countTextView;
     private int count = 0;
 
@@ -18,8 +17,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        incrementButton = findViewById(R.id.incrementButton);
-        decrementButton = findViewById(R.id.decrementButton);
+        Button incrementButton = findViewById(R.id.incrementButton);
+        Button decrementButton = findViewById(R.id.decrementButton);
         countTextView = findViewById(R.id.countTextView);
 
         // Increment button listener
@@ -42,6 +41,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void updateCount() {
-        countTextView.setText("Your Year: " + count);
+        countTextView.setText(  "Your Year: " + count);
     }
 }
